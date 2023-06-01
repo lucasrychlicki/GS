@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+}
+
+
+body {
+    background-color: #eeeee6;
+}
+
+
+#menu{
+    background-color: #1b1b1b;
+}
+
+#menu ul {
+    margin-left: 27%;
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #d9c57a;
+    padding: 20px;
+    display: inline-block;
+    justify-content: flex-end;
+    align-content:flex-end;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#menu ul li a:hover {
+    background-color: #d9c57a;
+    color: #1b1b1b;
+}
+
+
+.logo{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.texto-intro {
+    margin: 50px;
+}
+
+.titulo1 {
+    color: #1b1b1b;
+    font-size: 42px;
+    text-align:left;
+    letter-spacing: -1px;
+}
+
+.texto1 {
+    color: #1b1b1b;
+    margin-top: 7px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.carrossel {
+    margin: 50px;
+}
+
+.divisao {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    
+} 
+.a_s {
+    margin: 50px;
+}
+
+.i_a {
+    margin: 50px;
+}
+
+.c_e {
+    margin: 50px;
+}
