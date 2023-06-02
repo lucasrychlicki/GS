@@ -55,13 +55,19 @@ body {
 }
 
 .intro {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.texto-intro {
+.texto-intro, .carrossel {
     margin: 50px;
 }
+
+.texto-intro{
+    min-width: 400px;
+    max-width: 500px;
+}
+
 
 .titulo1 {
     color: #1b1b1b;
@@ -73,27 +79,105 @@ body {
 .texto1 {
     color: #1b1b1b;
     margin-top: 7px;
+    margin-bottom: 30px;
     font-size: 22px;
     font-weight: 500;
 }
 
-.carrossel {
-    margin: 50px;
+.divisao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.a_s, .i_a, .c_e {
+    flex-basis: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.divisao {
+.a_s img, .i_a img, .c_e img {
+    margin: 10px;
+}
+
+footer {
+    background-color: #1b1b1b;
+}
+
+.footer {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
+}
+
+.logo-footer img{
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+.logo-footer p {
+    margin: 1% 0 1% 10%;
+    font-size: 22px;
+    font-weight: 600;
     
-} 
-.a_s {
-    margin: 50px;
 }
 
-.i_a {
-    margin: 50px;
+.logo-footer p {
+    color: #d9c57a;
 }
 
-.c_e {
-    margin: 50px;
+.redes {
+    margin-left: 10%;
+    display: flex;
+}
+.redes a {
+    margin: 0.5%;
+    margin-bottom: 30px;
+}
+
+.redes a:hover {
+    transition: background .4s;
+    background-color: #d9c57a;
+}
+
+.contato {
+    margin-left: 8%;
+    margin: 2%;
+}
+
+.contato ul {
+    margin-left: 8%;
+    list-style: none;
+}
+.contato li {
+    margin: 1.5%;
+}
+
+.contato a {
+    font-size: 20px;
+}
+
+.sobre {
+    margin-left: 8%;
+    margin: 2%;
+}
+
+.sobre ul {
+    margin-left: 8%;
+    list-style: none;
+}
+.sobre li {
+    margin: 1.5%;
+}
+
+.sobre a {
+    color: #d9c57a;
+    text-decoration: none;
+    font-size: 26px;
+}
+.sobre a:hover {
+    transition: background .4s;
+    color: #FFF;
 }
